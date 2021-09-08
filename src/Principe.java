@@ -1,6 +1,6 @@
 public class Principe implements Character {
 
-    private String nombre, imagen, tipoEspada;
+    private String nombre, imagen, tipoEspada, tipo = "Principe";
     private int altura, peso, inteligencia, habilidades, daño = 50; // cm / kg / 0-201 (iq) / n-habilidades
 
     public Principe(String nombre, String imagen, String tipoEspada ,int altura, int peso, int inteligencia, int habilidades){
@@ -11,6 +11,14 @@ public class Principe implements Character {
         this.peso = peso;
         this.inteligencia = inteligencia;
         this.habilidades = habilidades;
+    }
+
+    public String Getnombre(){
+        return nombre;
+    }
+
+    public String GetTipo(){
+        return tipo;
     }
 
     @Override

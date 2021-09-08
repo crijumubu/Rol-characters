@@ -1,6 +1,6 @@
 public class Villano implements Character {
 
-    private String nombre, imagen, archiEnemigo;
+    private String nombre, imagen, archiEnemigo, tipo = "Villano";
     private int altura, peso, inteligencia, habilidades, daño = 90; // cm / kg / 0-201 (iq) / n-habilidades
 
     public Villano(String nombre, String imagen, String archiEnemigo ,int altura, int peso, int inteligencia, int habilidades){
@@ -11,6 +11,14 @@ public class Villano implements Character {
         this.peso = peso;
         this.inteligencia = inteligencia;
         this.habilidades = habilidades;
+    }
+
+    public String Getnombre(){
+        return nombre;
+    }
+
+    public String GetTipo(){
+        return tipo;
     }
 
     @Override

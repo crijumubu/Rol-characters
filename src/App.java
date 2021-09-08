@@ -55,8 +55,17 @@ public class App {
                     System.out.println("Este es tu inventario de personajes:");
                     for (int i=0; i<personajes.size(); i++){
                         System.out.println(i + ')');
-                        personajes.get(i).DescripcionGeneral();
+                        System.out.println("Nombre: "+ personajes.get(i).Getnombre() + ", tipo: " + personajes.get(i).GetTipo());
                         System.out.println("\n");
+                    }
+                    System.out.println("Ingresa el indice del personaje que deseas seleccionar: ");
+                    int i = input.nextInt();
+                    System.out.println("Haz seleccionado al personaje el personaje #" + i + ": ");
+                    try{
+                        personajes.get(i).DescripcionGeneral();
+                    }
+                    catch(Exception e){
+                        System.out.println("¡No hemos podido acceder al personaje que seleccionaste!");                        
                     }
                     break;
                 case 6:

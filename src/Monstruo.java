@@ -1,6 +1,6 @@
 public class Monstruo implements Character{
 
-    private String nombre, imagen, malformacion;
+    private String nombre, imagen, malformacion, tipo = "Monstruo";
     private int altura, peso, inteligencia, habilidades, daño = 80; // cm / kg / 0-201 (iq) / n-habilidades
 
     public Monstruo(String nombre, String imagen, String malformacion ,int altura, int peso, int inteligencia, int habilidades){
@@ -11,6 +11,14 @@ public class Monstruo implements Character{
         this.peso = peso;
         this.inteligencia = inteligencia;
         this.habilidades = habilidades;
+    }
+
+    public String Getnombre(){
+        return nombre;
+    }
+
+    public String GetTipo(){
+        return tipo;
     }
 
     @Override
