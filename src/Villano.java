@@ -38,10 +38,10 @@ public class Villano implements Character {
 
     @Override
     public void DescripcionGeneral() {
-        System.out.println("Información general:");
-        System.out.println("    " + "Nombre: " + nombre + ", Imagen: " + imagen + ", Archienemigo: " + archiEnemigo + ", Altura: " + altura + ", Peso: " + peso + ", Inteligencia: " + inteligencia + ", Habilidades: " + habilidades + ", Daño por habilidad: " + daño);
-        System.out.println("    " + "Clasificación por altura: " + ClasificacionAltura());
-        System.out.println("    " + "Clasificación por peso: " + ClasificacionPeso());
-        System.out.println("    " + "Clasificación por inteligencia: " + ClasificacionInteligencia());
+        System.out.println("\nInformación general:\n");
+        System.out.println("\tNombre: " + nombre + ", Imagen: " + imagen + ", Archienemigo: " + archiEnemigo + ", Altura: " + altura + ", Peso: " + peso + ", Inteligencia: " + inteligencia + ", Habilidades: " + habilidades + ", Daño por habilidad: " + daño);
+        System.out.println("\tClasificación por altura: " + ClasificacionAltura());
+        System.out.println("\tClasificación por peso: " + ClasificacionPeso());
+        System.out.println("\tClasificación por inteligencia: " + ClasificacionInteligencia());
     }
 }
